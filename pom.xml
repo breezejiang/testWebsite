@@ -3,6 +3,15 @@
   <groupId>testWebsite</groupId>
   <artifactId>testWebsite</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>  
+    <spring.group>org.springframework</spring.group>  
+    <spring.version>4.3.9.RELEASE</spring.version>
+  
+  	<hibernate.groupId>org.hibernate</hibernate.groupId>
+  	<hibernat.version>4.3.11.Final</hibernat.version>
+  </properties>
+  
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -25,4 +34,76 @@
       </plugin>
     </plugins>
   </build>
+  
+  <dependencies>
+  <dependency>
+		<groupId>${hibernate.groupId}</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>${hibernat.version}</version>
+	</dependency>
+  	<dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>${spring.group}</groupId>
+        <artifactId>spring-tx</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+    </dependency>
+  
+  
+    <!-- MySQL database driver -->
+    <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.9</version>
+        </dependency>
+  	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>servlet-api</artifactId>
+	    <version>2.5</version>
+	    <scope>provided</scope>
+	</dependency>
+  </dependencies>
 </project>

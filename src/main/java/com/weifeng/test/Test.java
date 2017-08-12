@@ -1,4 +1,4 @@
-package com.weifeng.test;
+package main.java.com.weifeng.test;
 
 public class Test {
 
